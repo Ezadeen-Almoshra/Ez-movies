@@ -1,0 +1,15 @@
+.rowone{
+    width:50% ;
+    background-color: black;
+}
+.box{
+    background-color: antiquewhite;
+    margin-top: 25px;
+    
+}
+.first-row{
+    text-align: end;
+     display: flex;
+    justify-content: space-between;
+  
+}

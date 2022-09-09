@@ -1,7 +1,22 @@
 .App {
+  height: 100vh;
   text-align: center;
+  font-family: 'Almarai', sans-serif;
+  width: auto;
 }
-
+.App .items{
+  background-color: rgb(131, 131, 131);
+  margin: auto;
+  width: 40%;
+ 
+}
+.main{
+  display: flex;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

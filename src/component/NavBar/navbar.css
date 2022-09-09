@@ -1,0 +1,102 @@
+
+/* #### navbar_nav #### */
+
+/* navBar css */
+.collapse{
+    justify-content: flex-end;
+    }
+.navbar{
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: var(--nero);
+    width: 100%;
+  }
+  .brand-and-toggler{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .brand-and-toggler a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .navbar-brand{
+    text-transform: uppercase;
+    font-family: var(--poppins);
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+  .navbar .navbar-brand span{
+    color:var(--green);
+    text-decoration:none;
+    
+  }
+  .navbar-toggler{
+    border: none;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition);
+  }
+  .navbar-toggler:hover{
+    opacity: 0.8;
+  }
+  .navbar-collapsee{
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  .nav-item{
+    text-align: center;
+    padding: 0.6rem;
+    position: relative;
+  }
+  .nav-item::after{
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    width: 0;
+    height: 2px;
+    background: var(--green);
+    transition: var(--transition);
+  }
+  
+  .nav-item:hover::after{
+    width: 100px;
+  }
+  .nav-link{
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  .nav-link:hover{
+    color: var(--green);
+  }
+  .nav-active .nav-link{
+    color: var(--green);
+  }
+  
+  .fromsereach{
+    display: flex;
+
+  }
+  .fromsereach input{
+    border-radius: 20px;
+   margin-right: 3px;
+   min-width: 400px;
+   text-align: center;
+  }
+  .fromsereach input:focus{
+    border:1px solid blueviolet;
+    box-shadow: 0 0 0 0.25rem rgba(189, 172, 17, 0.25);
+  }
+  .fromsereach button{
+    border-radius: 20px;
+    margin-left: 5px;
+  }
