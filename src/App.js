@@ -43,7 +43,7 @@ const [isloding, setIsloding] = useState(false);
         <Navbar getMoveBySearch={getMoveBySearch}/>
           <BrowserRouter>
           <Routes>
-           <Route path='/' element={<Cardmove proallmoves={allMoves} getMoviesInPage={getMoviesInPage} countPage={countPage} isloding={isloding}/>}/> 
+           <Route path='/Ez-Movie' element={<Cardmove proallmoves={allMoves} getMoviesInPage={getMoviesInPage} countPage={countPage} isloding={isloding}/>}/> 
            <Route path='/move/:id' element={<Movedetailes/>}/>
           </Routes>
         </BrowserRouter>
