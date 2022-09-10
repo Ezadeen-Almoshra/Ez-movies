@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Ez-movies/static/css/main.25241289.css",
-    "main.js": "/Ez-movies/static/js/main.5aedf48d.js",
+    "main.css": "/Ez-movies/static/css/main.87ed81b3.css",
+    "main.js": "/Ez-movies/static/js/main.c2837adf.js",
     "static/media/avatar1.png": "/Ez-movies/static/media/avatar1.8c92b0c957b2c4dcf159.png",
     "index.html": "/Ez-movies/index.html",
-    "main.25241289.css.map": "/Ez-movies/static/css/main.25241289.css.map",
-    "main.5aedf48d.js.map": "/Ez-movies/static/js/main.5aedf48d.js.map"
+    "main.87ed81b3.css.map": "/Ez-movies/static/css/main.87ed81b3.css.map",
+    "main.c2837adf.js.map": "/Ez-movies/static/js/main.c2837adf.js.map"
   },
   "entrypoints": [
-    "static/css/main.25241289.css",
-    "static/js/main.5aedf48d.js"
+    "static/css/main.87ed81b3.css",
+    "static/js/main.c2837adf.js"
   ]
 }
