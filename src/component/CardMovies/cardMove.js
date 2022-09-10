@@ -12,13 +12,12 @@ const Cardmove = () => {
   
   useEffect(() => {
     dispatch(getAllMovie())
-    // setProallmoves(allmov)
     setIsloding(true)
   }, []);
-  
+ 
   return (
     <section className="portfolio section-bg">
-      <div className="container" >
+      <div className="container my-height" >
 
         <div className="row portfolio-container my-5">
           
@@ -43,7 +42,7 @@ const Cardmove = () => {
             </Link>
           </div>
          
-         )})):<div>No Movies</div>}
+         )})):<div justify-content-center text-center>Loading...</div>}
         
         </div>
         

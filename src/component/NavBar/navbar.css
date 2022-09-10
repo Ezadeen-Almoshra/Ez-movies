@@ -84,19 +84,15 @@
   
   .fromsereach{
     display: flex;
-
   }
   .fromsereach input{
     border-radius: 20px;
-   margin-right: 3px;
-   min-width: 400px;
+   margin-right: 2px;
+   max-width: 500px;
    text-align: center;
   }
   .fromsereach input:focus{
     border:1px solid blueviolet;
     box-shadow: 0 0 0 0.25rem rgba(189, 172, 17, 0.25);
   }
-  .fromsereach button{
-    border-radius: 20px;
-    margin-left: 5px;
-  }
+  

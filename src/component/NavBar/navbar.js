@@ -30,7 +30,7 @@ const Navbar = () => {
 						<ul className="navbar-nav">
 
 							<li className="nav-item fromsereach">
-								<input className="form-control mr-sm-2" 
+								<input className="form-control sm-2 xm-1" 
 								type="text" placeholder="ابحث هنا"
 								onChange={(e)=>getMoveBySearch(e.target.value)}
 								/>
