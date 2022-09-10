@@ -21,7 +21,7 @@ const Movedetailes = () => {
                <div className='col-sm-6'>
                <div className="justify-content-center text-start mx-3 ">
                             <p className="card-text-details border-bottom">
-                            Name of film:{movie.name}
+                            Name of film:{movie.title}
                             </p>
                             <p className="card-text-details border-bottom">
                               Date Of film:{movie.release_date}
