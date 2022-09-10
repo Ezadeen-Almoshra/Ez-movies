@@ -1,8 +1,20 @@
 import React from 'react'
+import {useDispatch} from "react-redux"
 import "./navbar.css"
 import avatimge from "../../assets/avatar1.png"
-const Navbar = ({getMoveBySearch}) => {
-  return (
+import {getMovieSearch,getAllMovie} from "../redux/actions/movieAction"
+const Navbar = () => {
+	//const [getMoveBySearch,setGetMoveBySearch] = useState();
+	const dispatch=useDispatch()
+	
+	const getMoveBySearch=(word)=>{
+		if(word===""){
+			dispatch(getAllMovie())
+		}
+		else{dispatch(getMovieSearch(word))}
+		
+	}
+   return (
     <nav className="navbar navbar-expand-md bg-dark navbar-dark ">
 	
 		<div className="container">

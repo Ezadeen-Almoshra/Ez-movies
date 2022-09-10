@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './cardmove.css';
 import PaginationComp from '../Pagination/Pagination';
 import { Link, useParams } from 'react-router-dom';
-
-const Cardmove = ({proallmoves,getMoviesInPage, countPage,isloding}) => {
+import {useSelector,useDispatch} from "react-redux"
+import {getAllMovie} from "../redux/actions/movieAction"
+const Cardmove = () => {
+  // const [proallmoves, setProallmoves] = useState();
+  const [isloding, setIsloding] = useState(false);
+  const dispatch=useDispatch()
+  const proallmoves=useSelector(state=>state.movies);
+  
+  useEffect(() => {
+    dispatch(getAllMovie())
+    // setProallmoves(allmov)
+    setIsloding(true)
+  }, []);
+  
   return (
     <section className="portfolio section-bg">
       <div className="container" >
@@ -35,7 +47,7 @@ const Cardmove = ({proallmoves,getMoviesInPage, countPage,isloding}) => {
         
         </div>
         
-          <PaginationComp getMoviesInPage={getMoviesInPage} countPage={countPage}/>
+          <PaginationComp/>
         
       </div>
     </section>
