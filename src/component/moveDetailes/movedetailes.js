@@ -10,6 +10,7 @@ const Movedetailes = () => {
     const getMovieDetails = async () => {
         const res = await Axios.get(`https://api.themoviedb.org/3/movie/${param.id}?api_key=32d9ff83065f674a4cc6fe2f0fcf613a&language=ar`)
         setMovie(res.data)
+        console.log(res.data.title)
     }
     useEffect(() => {
         getMovieDetails();
